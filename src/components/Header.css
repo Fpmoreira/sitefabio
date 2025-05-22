@@ -1,0 +1,49 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  transition: top 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.header--hidden {
+  top: -100px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-weight: bold;
+  color: #002244;
+  font-size: 1.5rem;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu__item {
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.menu__item:hover {
+  color: #002244;
+  transform: scale(1.05);
+}
+
+.active {
+  color: #002244;
+  font-weight: bold;
+}
