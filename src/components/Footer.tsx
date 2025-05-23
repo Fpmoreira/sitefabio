@@ -1,9 +1,10 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer: React.FC = () => {
   return (
-    <footer style={{ textAlign: 'center', padding: '1rem', color: '#666' }}>
-      © {new Date().getFullYear()} Todos os direitos reservados.
+    <footer className="footer">
+      <p>&copy; {new Date().getFullYear()} Fábio Prates Moreira. Todos os direitos reservados.</p>
     </footer>
   );
 };

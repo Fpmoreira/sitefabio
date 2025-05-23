@@ -1,0 +1,44 @@
+.apresentacao {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+.apresentacao.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.apresentacao h2 {
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+.video-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video-item {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.video-item p {
+  margin-top: 0.5rem;
+  color: #555;
+  font-size: 0.95rem;
+}

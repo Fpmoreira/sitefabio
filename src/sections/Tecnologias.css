@@ -1,0 +1,64 @@
+.tecnologias {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.tecnologias.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tecnologias h2 {
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+.tecnologias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.tecnologia-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: relative;
+  width: 100%;
+  max-width: 180px;
+  text-align: center;
+}
+
+.tecnologia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.tecnologia-card img {
+  width: 60px;
+  height: 60px;
+}
+
+.tecnologia-card span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.descricao {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  background-color: #eef2f5;
+  padding: 0.5rem;
+  border-radius: 8px;
+}

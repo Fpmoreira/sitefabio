@@ -1,0 +1,45 @@
+.contato {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.contato.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contato h2 {
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+.contato-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contato-icone {
+  width: 64px;
+  height: 64px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.contato-icone img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.contato-icone:hover {
+  transform: scale(1.1);
+}
+
+.contato-icone:hover img {
+  filter: grayscale(0%);
+}
