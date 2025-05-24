@@ -1,17 +1,28 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
 .inicio {
+  background-color: #f9f9f9;
+  padding: 4rem 0; /* só padding vertical para manter espaço */
+}
+
+.inicio .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2rem;
-  background-color: #f9f9f9;
+  gap: 2rem;
 }
 
 .inicio__image {
   flex: 1 1 300px;
-  padding: 1rem;
   display: flex;
   justify-content: center;
+  padding: 1rem 0;
 }
 
 .inicio__image img {
@@ -23,7 +34,7 @@
 
 .inicio__texto {
   flex: 1 1 300px;
-  padding: 1rem;
+  padding: 1rem 0;
   color: #002244;
 }
 
@@ -38,8 +49,14 @@
 }
 
 @media (max-width: 768px) {
-  .inicio {
+  .inicio .container {
     flex-direction: column;
     text-align: center;
   }
+  
+  .inicio__image,
+  .inicio__texto {
+    max-width: 100%;
+  }
 }
+
