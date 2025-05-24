@@ -25,7 +25,7 @@ const Header: React.FC = () => {
           {['Inicio', 'Minha História', 'Apresentação', 'Tecnologias', 'Certificações', 'Projetos', 'Contato'].map((item) => (
             <Link
               key={item}
-              to={item.replace(/\\s/g, '')}
+              to={item.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\s/g, '-')}
               spy={true}
               smooth={true}
               duration={500}

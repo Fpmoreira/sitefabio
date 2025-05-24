@@ -5,7 +5,7 @@ import minhaFoto from '../assets/minha-foto.jpg';
 
 const Inicio: React.FC = () => {
   return (
-    <section id="Inicio" className="inicio">
+    <section id="inicio" className="inicio">
       <motion.div
         className="inicio__image"
         initial={{ opacity: 0, x: -50 }}
