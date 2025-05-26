@@ -1,15 +1,7 @@
 .minha-historia {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   padding: 4rem 0; /* só padding vertical */
   background-color: #f9f9f9;
   border-top: 1px solid #ccc;
-}
-
-.minha-historia.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .minha-historia h2 {
@@ -26,11 +18,11 @@
   text-align: justify; /* texto justificado para melhor leitura */
 }
 
-
 .container {
   max-width: 1200px;  /* largura máxima para alinhar com o header */
   margin: 0 auto;     /* centraliza horizontalmente */
   padding: 0 1rem;    /* espaço lateral para não encostar nas bordas da tela */
   width: 100%;        /* para telas menores */
 }
+
 
