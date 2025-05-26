@@ -15,6 +15,7 @@
   text-align: center;
   color: #003366;
   margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
 .grid {
@@ -22,18 +23,16 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  list-style: none;
+  padding: 0;
 }
 
 .tech-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease;
   cursor: pointer;
-}
-
-.tech-card:hover {
-  transform: scale(1.1);
+  text-align: center;
 }
 
 .tech-card i {
@@ -44,4 +43,79 @@
 .tech-card span {
   font-weight: 500;
   color: #002244;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+  .tech-card i {
+    font-size: 2.2rem;
+  }
+
+  .tech-card span {
+    font-size: 0.9rem;
+  }
+
+  .grid {
+    gap: 1.2rem;
+  }
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal box */
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #003366;
+}
+
+.modal-content p {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Close button */
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #003366;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
