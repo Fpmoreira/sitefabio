@@ -1,3 +1,4 @@
+
 .contato {
   padding: 4rem 2rem;
   background-color: #ffffff;
@@ -15,6 +16,57 @@
 .contato h2 {
   color: #003366;
   margin-bottom: 2rem;
+}
+
+.formulario-contato {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  color: #003366;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #003366;
+  box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #002244;
 }
 
 .contato-grid {
@@ -42,4 +94,15 @@
 
 .contato-icone:hover img {
   filter: grayscale(0%);
+}
+
+@media (max-width: 600px) {
+  .contato-icone {
+    width: 48px;
+    height: 48px;
+  }
+
+  .formulario-contato {
+    padding: 0 1rem;
+  }
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import './Contato.css';
 
-// Substitua pelos seus links reais:
 const contatos = [
   {
     nome: 'WhatsApp',
@@ -42,6 +41,31 @@ const Contato: React.FC = () => {
   return (
     <section id="contato" ref={ref} className={`contato ${inView ? 'visible' : ''}`}>
       <h2>Contato</h2>
+
+      <form className="formulario-contato" onSubmit={(e) => e.preventDefault()}>
+        <div className="form-group">
+          <label htmlFor="empresa">Nome/Empresa*</label>
+          <input type="text" id="empresa" name="empresa" required />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="email">Email*</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="titulo">Título*</label>
+          <input type="text" id="titulo" name="titulo" required />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="mensagem">Mensagem*</label>
+          <textarea id="mensagem" name="mensagem" rows={5} required />
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+
       <div className="contato-grid">
         {contatos.map((contato, index) => (
           <a
@@ -51,8 +75,9 @@ const Contato: React.FC = () => {
             rel="noopener noreferrer"
             className="contato-icone"
             title={contato.nome}
+            aria-label={`Link para ${contato.nome}`}
           >
-            <img src={contato.icone} alt={contato.nome} />
+            <img src={contato.icone} alt={contato.nome} loading="lazy" />
           </a>
         ))}
       </div>
