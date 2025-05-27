@@ -13,3 +13,25 @@ section {
 h2 {
   color: #003366;
 }
+
+/* Impede que elementos ultrapassem a largura da tela */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Garante que não haverá rolagem lateral por padrão */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Estilo global para imagens responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+

@@ -7,7 +7,7 @@ const MinhaHistoria: React.FC = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.2,
-    triggerOnce: false, // true se quiser animar só uma vez
+    triggerOnce: false,
   });
 
   useEffect(() => {
@@ -19,13 +19,14 @@ const MinhaHistoria: React.FC = () => {
   }, [inView, controls]);
 
   return (
-    <section id="minha-historia" className="minha-historia">
-      <motion.div
-        className="container"
-        ref={ref}
-        initial={{ opacity: 0, y: 30 }}
-        animate={controls}
-      >
+    <motion.section
+      id="minha-historia"
+      className="minha-historia"
+      ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      animate={controls}
+    >
+      <div className="container">
         <h2>Minha História</h2>
         <p>
           Minha trajetória profissional começou com o interesse por tecnologia ainda na juventude...
@@ -38,8 +39,8 @@ const MinhaHistoria: React.FC = () => {
           Hoje, atuo como desenvolvedor fullstack, focando em entregar soluções escaláveis e com excelente
           experiência de usuário.
         </p>
-      </motion.div>
-    </section>
+      </div>
+    </motion.section>
   );
 };
 
