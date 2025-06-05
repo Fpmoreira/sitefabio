@@ -42,9 +42,10 @@
 }
 
 .projeto-card img {
-  width: 80px;
+  width: 100px;
   height: auto;
-  margin-bottom: 0.5rem;
+  display: block;
+  margin: 0 auto 0.5rem; /* centraliza horizontalmente e mantém espaço inferior */
 }
 
 .projeto-card span {

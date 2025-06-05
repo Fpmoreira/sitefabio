@@ -41,7 +41,7 @@ const Inicio: React.FC = () => {
         >
           <h1>Bem-vindo!</h1>
           <p>
-            Sou um profissional com anos de experiência em desenvolvimento de software, apaixonado por tecnologia e boas práticas de código. Ao longo da minha carreira, venho criando soluções inovadoras e contribuindo para projetos de impacto.
+            Olá. eu sou o Fábio, profissional apaixonado por tecnologia desde a infância e com forte trajetória de superação. Formado em Engenharia de Software, tenho experiência em desenvolvimento Full-Stack com domínio nas tecnologias: HTML, CSS, JavaScript, TypeScript (Angular), Java, Spring Boot, PostgreSQL, MongoDB, Python e AWS. Atuo com metodologias ágeis como Scrum e DevOps, aplicando práticas de entrega contínua e otimização de processos em nuvem. Sou uma pessoa autodidata, resiliente e proativo, destaco-me pela capacidade de adaptação, aprendizado contínuo e colaboração em equipe, sinto-me preparado para contribuir com projetos inovadores e ambientes desafiadores.
           </p>
         </motion.div>
       </div>

@@ -1,23 +1,25 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
+import portifolio from '../assets/portifolio1.png';
+import plataformaEad from '../assets/plataforma-EAD.png';
 import './Projetos.css';
 
 const projetos = [
   {
     nome: 'Portfólio Pessoal',
-    imagem: 'https://cdn-icons-png.flaticon.com/512/1023/1023656.png',
-    link: 'https://seuportfolio.com',
+    imagem: portifolio,
+    link: 'https://github.com/Fpmoreira/sitefabio',
   },
   {
-    nome: 'App de Finanças',
-    imagem: 'https://cdn-icons-png.flaticon.com/512/3024/3024605.png',
-    link: 'https://github.com/seuusuario/app-financas',
+    nome: 'App de Plataforma EAD',
+    imagem: plataformaEad,
+    link: 'https://github.com/Fpmoreira/EAD',
   },
-  {
-    nome: 'Landing Page Empresa X',
-    imagem: 'https://cdn-icons-png.flaticon.com/512/1010/1010657.png',
-    link: 'https://empresa-x-site.netlify.app',
-  },
+  //{
+  //  nome: 'Landing Page Empresa X',
+  //  imagem: 'https://cdn-icons-png.flaticon.com/512/1010/1010657.png',
+  //  link: 'https://empresa-x-site.netlify.app',
+  //},
 ];
 
 const Projetos: React.FC = () => {

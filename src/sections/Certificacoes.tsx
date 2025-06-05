@@ -1,23 +1,24 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
+import awsLogo from '../assets/aws-re-start-graduate.png';
 import './Certificacoes.css';
 
 const certificacoes = [
   {
-    nome: 'AWS Certified Cloud Practitioner',
-    logo: 'https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified-Cloud-Practitioner_badge.262x250.png',
-    link: 'https://www.certmetrics.com/amazon/public/transcript.aspx', // Exemplo, substitua pelo seu link real
+    nome: 'AWS re/Start Graduate',
+    logo: awsLogo,
+    link: 'https://www.credly.com/badges/149b3e9d-82d3-4ff5-b0e6-aa3c30c428c4/public_url', 
   },
-  {
-    nome: 'Microsoft Certified: Azure Fundamentals',
-    logo: 'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-azure-fundamentals.svg',
-    link: 'https://learn.microsoft.com/en-us/certifications/', // Exemplo, substitua pelo seu link real
-  },
-  {
-    nome: 'Scrum Fundamentals Certified',
-    logo: 'https://www.scrumstudy.com/SFC-Badge.png',
-    link: 'https://www.scrumstudy.com/certification/scrum-fundamentals-certified', // Exemplo
-  },
+  //{
+   // nome: 'Microsoft Certified: Azure Fundamentals',
+   //  logo: 'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-azure-fundamentals.svg',
+   //  link: 'https://learn.microsoft.com/en-us/certifications/', // Exemplo, substitua pelo seu link real
+  //},
+  //{
+    //nome: 'Scrum Fundamentals Certified',
+    //logo: 'https://www.scrumstudy.com/SFC-Badge.png',
+    //link: 'https://www.scrumstudy.com/certification/scrum-fundamentals-certified', // Exemplo
+  //},
 ];
 
 const Certificacoes: React.FC = () => {

@@ -44,7 +44,8 @@
 .cert-card img {
   width: 100px;
   height: auto;
-  margin-bottom: 0.5rem;
+  display: block;
+  margin: 0 auto 0.5rem; /* centraliza horizontalmente e mantém espaço inferior */
 }
 
 .cert-card span {

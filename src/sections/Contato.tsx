@@ -6,32 +6,32 @@ const contatos = [
   {
     nome: 'WhatsApp',
     icone: 'https://cdn-icons-png.flaticon.com/512/733/733585.png',
-    link: 'https://wa.me/5599999999999?text=Olá,%20gostaria%20de%20falar%20com%20você!',
+    link: 'https://wa.me/5511951731174?text=Olá,%20gostaria%20de%20falar%20com%20você!',
   },
   {
     nome: 'GitHub',
     icone: 'https://cdn-icons-png.flaticon.com/512/733/733553.png',
-    link: 'https://github.com/seuusuario',
+    link: 'https://github.com/Fpmoreira',
   },
   {
     nome: 'Instagram',
     icone: 'https://cdn-icons-png.flaticon.com/512/2111/2111463.png',
-    link: 'https://instagram.com/seuusuario',
+    link: 'https://instagram.com/fabiopratesmoreira/',
   },
   {
     nome: 'Facebook',
     icone: 'https://cdn-icons-png.flaticon.com/512/733/733547.png',
-    link: 'https://facebook.com/seuusuario',
+    link: 'https://facebook.com/fabio.prates.moreira/',
   },
   {
     nome: 'YouTube',
     icone: 'https://cdn-icons-png.flaticon.com/512/1384/1384060.png',
-    link: 'https://youtube.com/seucanal',
+    link: 'https://youtube.com/@fabiopratesdev7304',
   },
   {
     nome: 'LinkedIn',
     icone: 'https://cdn-icons-png.flaticon.com/512/145/145807.png',
-    link: 'https://linkedin.com/in/seuusuario',
+    link: 'https://linkedin.com/in/fábio-prates-moreira/',
   },
 ];
 
