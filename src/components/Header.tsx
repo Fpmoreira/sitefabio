@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import './Header.css';
+import logoImg from '../assets/logo.png';
 
 const Header: React.FC = () => {
   const [hidden, setHidden] = useState(false);
@@ -42,7 +43,9 @@ const Header: React.FC = () => {
   return (
     <header className={`header ${hidden ? 'header--hidden' : ''}`}>
       <div className="header__container">
-        <div className="logo">MeuLogo</div>
+        <div className="logo">
+          <img src={logoImg} alt="Logo Fábio Prates" className="logo__img" />
+        </div>
 
         <button className="hamburger" onClick={toggleMenu}>
           ☰
