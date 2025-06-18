@@ -56,7 +56,7 @@ const Contato: React.FC = () => {
     setMensagemStatus('Enviando...');
 
     try {
-      const response = await fetch('http://localhost:8080/api/contato', {
+      const response = await fetch('https://api-contato-springboot.onrender.com/api/contato', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
